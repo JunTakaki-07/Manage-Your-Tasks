@@ -1,0 +1,14 @@
+{% extends 'based.html' %}
+
+{% block content %}
+<form action="" method="POST">{% csrf_token %}
+    <p>task name: <input type="text" name="task_name"></p>
+    <p>task description: <input type="text" name="task_description"></p>
+    <p>task purpose: <input type="text" name="task_purpose"></p>
+    <p>task valuew: <input type="text" name="task_key_goal_indicators"></p>
+<input type="submit" value="Create">
+</form>
+
+
+{% endblock content %}
+

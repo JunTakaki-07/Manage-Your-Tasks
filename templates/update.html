@@ -1,0 +1,16 @@
+{% extends 'based.html' %}
+
+{% block content %}
+<div class="container">
+<form action="" method="POST">{% csrf_token %}
+    <p>{{ form.task_name}}</p>
+    <p>{{ form.task_description}}</p>
+    <p>{{ form.task_purpose}}</p>
+    <p>{{ form.task_key_goal_indicators}}</p>
+    <input type="submit" value="Update">
+</form>
+</div>
+
+
+{% endblock content %}
+
